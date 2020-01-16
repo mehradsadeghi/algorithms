@@ -9,6 +9,7 @@ class LinearSearchTest extends TestCase {
     private const LIST = [1, 5, 4, 2, 7, 6];
 
     public function setUp():void {
+        parent::setUp();
         $this->linearSearch = new LinearSearch();
     }
 

@@ -10,6 +10,7 @@ class BinarySearchTest extends TestCase {
     private const Odd_Haystack = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
     public function setUp():void {
+        parent::setUp();
         $this->binarySearch = new BinarySearch();
     }
 

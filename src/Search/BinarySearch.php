@@ -4,7 +4,7 @@ namespace Src\Search;
 
 class BinarySearch {
 
-    public function search(array $haystack, $target) {
+    public function search(array $haystack, int $target) {
 
         $minIndex = 0;
         $maxIndex = count($haystack) - 1;

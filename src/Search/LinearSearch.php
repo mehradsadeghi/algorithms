@@ -4,7 +4,7 @@ namespace Src\Search;
 
 class LinearSearch {
 
-    public function search(array $haystack, $target) {
+    public function search(array $haystack, int $target) {
 
         $count = count($haystack);
 
