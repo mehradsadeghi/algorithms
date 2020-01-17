@@ -15,6 +15,10 @@ class SelectionSort {
 
         $count = count($items);
 
+        if($count <= 1) {
+            return $items;
+        }
+
         for($i = 0; $i < $count; $i++) {
             $index = $this->findMinIndex($items, $i, $count);
             $items = $this->swap($items, $i, $index);

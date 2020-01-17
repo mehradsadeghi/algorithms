@@ -14,6 +14,11 @@ class BubbleSort {
     public function sort(array $items): array {
 
         $count = count($items);
+
+        if($count <= 1) {
+            return $items;
+        }
+
         $temp = 0;
 
         for ($i = 0; $i < $count; $i++) {

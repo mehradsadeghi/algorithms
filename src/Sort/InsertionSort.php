@@ -15,6 +15,10 @@ class InsertionSort {
 
         $count = count($items);
 
+        if($count <= 1) {
+            return $items;
+        }
+
         for($i = 1; $i < $count; $i++) {
 
             $j = $i;
