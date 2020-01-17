@@ -4,7 +4,14 @@ namespace Src\Search;
 
 class BinarySearch {
 
-    public function search(array $haystack, int $target) {
+    /**
+     * Search through the sorted list and if the target is found, its index will be returned, otherwise -1 will be returned
+     *
+     * @param array $haystack
+     * @param int $target
+     * @return int
+     */
+    public function search(array $haystack, int $target): int {
 
         $minIndex = 0;
         $maxIndex = count($haystack) - 1;

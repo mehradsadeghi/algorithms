@@ -4,7 +4,14 @@ namespace Src\Search;
 
 class LinearSearch {
 
-    public function search(array $haystack, int $target) {
+    /**
+     * Search through the list and if the target is found, its index will be returned, otherwise -1 will be returned
+     *
+     * @param array $haystack
+     * @param int $target
+     * @return int
+     */
+    public function search(array $haystack, int $target): int {
 
         $count = count($haystack);
 
